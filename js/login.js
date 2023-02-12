@@ -11,5 +11,15 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     // step 3.c get value form the element
     const passwordField = document.getElementById('user-password');
     const password = passwordField.value ;
-    console.log(email,password);
-})
+    
+    // DANGER : do not check email and password in this way...we are using this way only to learn
+    if(email === 'sobuj@gmail.com' && password === 'sobuj'){
+        // window.location.href is used to go from one html to another html
+    window.location.href = 'bank.html';
+    }
+    else{
+       alert('Tui password vule gesos');
+    }
+});
+
+
